@@ -141,15 +141,15 @@ Số frame in theo CVAT (bắt đầu từ 0). Trong gt.txt, frame_id = frame CV
 
 1. Nếu được gán lại, bạn sẽ đặt keyframe khác ở đâu? Vì sao?
 
-   Tôi sẽ đặt thưa hơn, chỉ ở chỗ đổi hướng, đổi tốc độ hoặc box lệch rõ. P1 và P2 mỗi người 65 keyframe là quá dày. P3 đứng yên từ frame 38 nên chỉ cần keyframe ở frame đầu, frame dừng, quanh đoạn che (106–110, 136–143) và frame cuối.
+   - Tôi sẽ đặt thưa hơn, chỉ ở chỗ đổi hướng, đổi tốc độ hoặc box lệch rõ. P1 và P2 mỗi người 65 keyframe là quá dày. P3 đứng yên từ frame 38 nên chỉ cần keyframe ở frame đầu, frame dừng, quanh đoạn che (106–110, 136–143) và frame cuối.
 
 2. Có chỗ nào bạn không chắc "cùng ID hay ID mới"? Bạn đã quyết định và ghi chú thế nào?
 
-   P3 sau khi khuất hẳn 25 frame (111–135). Tôi giữ cùng ID vì ngắn hơn ngưỡng 60 frame và người này hiện lại đúng chỗ cũ với box tương tự. Lý do ghi ở mục 3.
+   - P3 sau khi khuất hẳn 25 frame (111–135). Tôi giữ cùng ID vì ngắn hơn ngưỡng 60 frame và người này hiện lại đúng chỗ cũ với box tương tự. Lý do ghi ở mục 3.
 
 3. Một lỗi ID trong job của bạn (nếu không còn sót, chọn lỗi đã sửa) có thể làm xe tự lái dự đoán sai chuyển động của người đó như thế nào? Lỗi đó ảnh hưởng MOTA hay IDF1 nhiều hơn?
 
-   Job không còn lỗi ID, nên tôi lấy tình huống có thể xảy ra: P3 hiện lại ở frame 136 với ID mới. Xe coi đó là người mới, mất lịch sử vận tốc và hướng nên dự đoán chuyển động sai. Lỗi này ảnh hưởng IDF1 nhiều hơn MOTA, vì MOTA chỉ tính một lỗi đổi ID, còn IDF1 tính sai danh tính cho cả phần track còn lại.
+   - Job không còn lỗi ID, nên tôi lấy tình huống có thể xảy ra: P3 hiện lại ở frame 136 với ID mới. Xe coi đó là người mới, mất lịch sử vận tốc và hướng nên dự đoán chuyển động sai. Lỗi này ảnh hưởng IDF1 nhiều hơn MOTA, vì MOTA chỉ tính một lỗi đổi ID, còn IDF1 tính sai danh tính cho cả phần track còn lại.
 
 ## Bonus (nếu làm)
 
@@ -175,4 +175,4 @@ Số frame in theo CVAT (bắt đầu từ 0). Trong gt.txt, frame_id = frame CV
 
 ## 7. Tài liệu tham khảo và công cụ AI đã dùng
 
-Claude, Gemini cho tra cứu thông tin, cách xử lý những trường hợp gây khó hiểu
+  - Claude, Gemini cho tra cứu thông tin, cách xử lý những trường hợp gây khó hiểu
